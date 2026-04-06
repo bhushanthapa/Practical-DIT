@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <title>Anandzon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <button id="cart"><i class="fa fa-shopping-cart fa-lg"></i></button>
+    </div>
+
+    <div class="flex-container">
+        
+        <div class="flex-item left-section">
+            <div class="product-main-img">
+                <img id="mainImage" src="/images/Image4.jpg" alt="New Balance">
+            </div>
+            <div class="thumbnail-container">
+                <img class="thumb active-thumb" src="images/Image2.jpg">
+                <img class="thumb" src="images/Image3.jpg" >
+                <img class="thumb" src="images/Image4.jpg" >
+            </div>
+        </div>
+
+        <div class="flex-item right-section">
+            <div class="maindata">
+                <h1>New Balance</h1>
+                <h2 class="price">5000</h2>
+                <p class="desc">Premium comfortable sneakers for daily wear. Available in multiple sizes.</p>
+            </div>
+
+            <p class="title-name">Size</p>
+            <div id="Size-container">
+                <div class="item size-option">4</div>
+                <div class="item size-option">5</div>
+                <div class="item size-option">6</div>
+            </div>
+
+            <p class="title-name">Quantity</p>
+            <div class="quantity-selector">
+                <button class="qty-btn minus"><i class="fa fa-minus"></i></button>
+                <input type="number" id="qtyInput" value="1" min="1">
+                <button class="qty-btn plus"><i class="fa fa-plus"></i></button>
+            </div>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
